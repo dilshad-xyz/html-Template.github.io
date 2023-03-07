@@ -424,6 +424,11 @@ span.sign-in {
    .row.py-3 {
       padding: 0px !important;
     }
+    hr {
+      flex: 0 0 100%;
+      max-width: 90% !important;
+      margin: auto;
+    }
     .hero-heading {
          flex-direction: column;
     }
