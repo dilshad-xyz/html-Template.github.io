@@ -3,10 +3,440 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=<>>, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="modify.css">
    <title>Document</title>
 </head>
 <body>
-   <h1>Headings</h1>
+   <section class="px-5">
+      <!-------------------------------Navigation------------------------------------>
+      <nav class="navbar navbar-expand-lg navbar-light nav-bar-custom">
+         <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" alt="logo" class="img-fluid logo-img">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item .nav-transformX nav-transformX">
+                  <a class="nav-link nav-links-custom" href="#">Tour Deals</a>
+               </li>
+               <li class="nav-item nav-transformX">
+                  <a class="nav-link nav-links-custom" href="#">Flights</a>
+               </li>
+               <li class="nav-item nav-transformX">
+                  <a class="nav-link nav-links-custom" href="#">Hotels</a>
+               </li>
+               <li class="nav-item nav-transformX">
+                  <a class="nav-link nav-links-custom" href="#">Transfers</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link nav-links-custom1 nav-transformX" href="#">Employment Tour</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link nav-links-custom nav-transformX" href="#">Vouchers</a>
+               </li>
+            </ul>
+            <span class="navbar-text w-50 d-flex justify-content-end">
+               <ul class="navbar-nav mr-auto d-flex align-items-center">
+                  <li class="nav-item .nav-transformX">
+                     <a class="nav-link nav-links-custom1 nav-transformX" href="#">Manage booking</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                        <span class="sign-in"> Sign in </span> 
+                        <span><img src="img/use.svg" alt="logo" class="img-fluid"></span> 
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                        <button class="btn btn-default btn-custom btn_hover"> AED </button>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">
+                        <button class="btn btn-default btn-custom btn_hover">
+                           <span>EN</span>
+                           <span><img src="img/circle-flags_uk.svg" alt="logo" class="img-fluid"></span> 
+                        </button>
+                     </a>
+                  </li>
+               </ul>
+            </span>
+         </div>
+      </nav>
+    </section>
+      <!-------------------------------------------------------------------------->
+      <div class="bg">
+      <section class="container">
+         <div class="row  gy-3 pb-3">
+            <div class="hero-heading">
+               <div class="left-section">
+                   <div class="d-flex align-items-center"> 
+                     <h2>Jumeirah Al Qasr</h2>
+                     <img src="img/location.svg" alt="location" class="img-fluid">
+                     <p>Al Sufouh, Dubai</p>
+                     <a>View on map</a>
+                   </div>
+               </div>
+               <div class="right-section">
+                  <h3>Excellent</h3>
+                  <button class="btn btn-excellent">4.5 / 5</button>
+               </div>
+            </div>
+            <div class="hero-bottom">
+              <span> 
+                  <button class="btn btn-primary">Featured</button>
+                  <img src="img/star.svg" alt="star" class="img-fluid">
+                  <img src="img/star.svg" alt="star" class="img-fluid">
+                  <img src="img/star.svg" alt="star" class="img-fluid">
+                  <img src="img/star.svg" alt="star" class="img-fluid">
+                  <img src="img/star.svg" alt="star" class="img-fluid">
+               </span>
+               <p class="her-bottom-p">(560 reviews)</p>
+            </div>
+            <div class="col-md-6">
+               <img src="img/img1.jpg" alt="hotel-img" class="img-fluid hotel-img">
+            </div>
+            <div class="col-md-3 hotel-images">
+               <img src="img/img6.jpg" alt="hotel-img" class="img-fluid hotel-img1">
+               <img src="img/img4.jpg" alt="hotel-img" class="img-fluid hotel-img1">
+            </div>
+            <div class="col-md-3 hotel-images">
+               <img src="img/img3.jpg" alt="hotel-img" class="img-fluid hotel-img2">
+               <img src="img/img5.jpg" alt="hotel-img" class="img-fluid hotel-img2">
+            </div>
+         </div>
+      </section>
+      <!----------------------------------------------------------------->
+       <section class="container">
+          <div class="row ">
+              <div class="col-md-9">
+               <ul class="nav nav-pills mb-3 custom-nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item tab-transformX" role="presentation">
+                    <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Over View</button>
+                  </li>
+                  <li class="nav-item tab-transformX" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Rooms</button>
+                  </li>
+                  <li class="nav-item tab-transformX" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab " data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Facilities</button>
+                  </li>
+                  <li class="nav-item tab-transformX" role="presentation">
+                     <button class="nav-link" id="pills-contact-tab " data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Services</button>
+                   </li>
+                   <li class="nav-item tab-transformX" role="presentation">
+                     <button class="nav-link" id="pills-contact-tab " data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Location</button>
+                   </li>
+                   <li class="nav-item tab-transformX" role="presentation">
+                     <button class="nav-link" id="pills-contact-tab " data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
+                   </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                     <h3 class="headings py-3">Description</h3>
+                     <p>Guests relaxing on Jumeirah Al Qasr’s private, sandy beach are offered free fresh fruit 
+                        and cool towels. Talise Spa features overwater treatment rooms. Other on-site amenities 
+                        includes a large 
+                        pool complex with dedicated children’s areas and a marble lobby lounge with palm trees.
+                     </p>
+                     <p class="pt-2">The property provides complimentary shuttle service to Wild Wadi Waterpark™, Madinat 
+                        Jumeirah, Jumeirah Beach Hotel and Mall of the Emirates. The hotel is also next to Madinat
+                         Jumeirah Souk. Dubai Internet City is a 15-minute drive from the hotel. Free parking is
+                          possible on site.
+                     </p>
+                     <button class="btn btn-default-custom"><img src="img/mdi_stove.svg" alt="icon" class="modify-stave"> Kitchen</button>
+                     <button class="btn btn-default-custom"><img src="img/svg1.svg" alt="icon" class="modify-stave"> Sea View</button>
+                     <button class="btn btn-default-custom"><img src="img/img2.svg" alt="icon" class="modify-stave"> Garden</button>
+                     <button class="btn btn-default-custom"><img src="img/svg3.svg" alt="icon" class="modify-stave"> Swimming Pool</button>
+                     <button class="btn btn-default-custom"><img src="img/svg4.svg" alt="icon" class="modify-stave"> Free Wifi</button>
+                     <button class="btn btn-default-custom"><img src="img/svg5.svg" alt="icon" class="modify-stave"> Terrace</button>
+                     <button class="btn btn-default-custom"><img src="img/svg6.svg" alt="icon" class="modify-stave"> Balcony</button>
+                     <button class="btn btn-default-custom"><img src="img/svg7.svg" alt="icon" class="modify-stave"> Free Parking</button>
+                     <h3 class="headings py-4">Select Your Room</h3>
+                     <div class="row">
+                              <div class="col-md-6 col-6-bg1">
+                                 <p class="booking">Booking</p>
+                              </div>
+                              <div class="col-md-6 col-6-bg2">
+                              </div>
+                              <div class="col-md-4 border-custom bg-white">
+                                 <p class="chec-in">Check in-out</p>
+                                 <select class="form-select pt-2 select border-0" id="floatingSelectGrid" aria-label="Floating label select example">
+                                    <option selected="">Please Select</option>
+                                    <option value="1">One</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-4 p-0 bg-white pt-2 text-center">
+                                 <p class="chec-in">Check in-out</p>
+                                 <select class="form-select pt-2 select border-0 text-center px-2" id="floatingSelectGrid" aria-label="Floating label select example">
+                                    <option selected="">Please Select</option>
+                                    <option value="1">One</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-4 bg-primary d-flex justify-content-center align-items-center">
+                                 <a href="#" class="m-0 text-white text-decoration-none">Check Availability</a>
+                              </div>
+                              </div>
+                              <div class="row gy-3">
+                              <div class="col-md-12 d-flex align-items-center py-3">
+                                    <img src="img/img-7.jpg" alt="img" class="img-fluid img-delux">
+                                    <div class="d-flex flex-column justify-content-center">
+                                       <h1 class="delux-heading">Lagoon Deluxe Room</h1>
+                                       <div class="d-flex align-items-center">
+                                          <span class="custon-span-font"><img src="img/sv8.svg" class="px-2">29 sq m</span>
+                                          <span class="px-5 custon-span-font"><img src="img/svg9.svg" class="px-2 ">City View</span>
+                                       </div>
+                                       <span class="custon-span-font"><img src="img/svg10.svg" class="px-2 ">City View</span>
+                                       <span class="custon-span-font"><img src="img/sv8.svg" class="px-2">City View</span>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="refund-section1">
+                                        <div class="refund-left-section">
+                                          <p class="option m-0">Option 1</p>
+                                          <p class="option m-0 fully-refund">Fully Refundable</p>
+                                          <p class="option m-0">Before Wednesday 19 October 2022</p>
+                                          <p class="custon-span-font m-0"><img src="img/sv8.svg" class="px-2">Reserve now, pay later</p>
+                                          <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                          <p class="custon-span-font m-0"><img src="img/svg4.svg" class="px-2">Breakfast for 2 included</p>
+                                          <p class="custon-span-font m-0"><img src="img/svg5.svg" class="px-2">Breakfast for 2 included</p>
+                                        </div>
+                                        <div class="refund-right-section">
+                                          <p class="discount">15 % off</p>
+                                          <p class="custon-span-font m-0"><img src="img/sv8.svg" class="px-2"><span class="text-decoration-line-through"> AED 1,920</span> <span class="aed">AED 1,920</span></p>
+                                          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>                    <p class="custon-span-font m-0">for 5 nights</p>
+                                          <p class="custon-span-font m-0">€250 per night</p>
+                                          <p class="custon-span-font m-0">includes taxes & fees</p>
+                                          <p class="custon-span-font m-0">Price Details <i class="fa fa-right"></i></p>
+                                          <button class="btn btn-primary btn_hover">View Details</button>
+                                       </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="refund-section1">
+                                    <div class="refund-left-section">
+                                      <p class="option m-0">Option 1</p>
+                                      <p class="option m-0 fully-refund">Fully Refundable</p>
+                                      <p class="option m-0">Before Wednesday 19 October 2022</p>
+                                      <p class="custon-span-font m-0"><img src="img/sv8.svg" class="px-2">Reserve now, pay later</p>
+                                      <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                      <p class="custon-span-font m-0"><img src="img/svg4.svg" class="px-2">Breakfast for 2 included</p>
+                                      <p class="custon-span-font m-0"><img src="img/svg5.svg" class="px-2">Breakfast for 2 included</p>
+                                    </div>
+                                    <div class="refund-right-section">
+                                      <p class="discount">15 % off</p>
+                                      <p class="custon-span-font m-0"><img src="img/sv8.svg" class="px-2"><span class="text-decoration-line-through"> AED 1,920</span> <span class="aed">AED 1,920</span></p>
+                                      <p class="custon-span-font m-0">for 5 nights</p>
+                                      <p class="custon-span-font m-0">€250 per night</p>
+                                      <p class="custon-span-font m-0">includes taxes & fees</p>
+                                      <p class="custon-span-font m-0">Price Details <i class="fa fa-right"></i></p>
+                                      <button class="btn btn-primary btn_hover">View Details</button>
+                                   </div>
+                                 </div>
+                              </div>
+
+                              <!----------------------------------Section2------------------------------------>
+                              <div class="col-md-12 d-flex align-items-center py-3">
+                                 <img src="img/img-7.jpg" alt="img" class="img-fluid img-delux">
+                                 <div class="d-flex flex-column justify-content-center">
+                                    <h1 class="delux-heading">Lagoon Deluxe Room</h1>
+                                    <div class="d-flex align-items-center">
+                                       <span class="custon-span-font"><img src="img/sv8.svg" class="px-2">29 sq m</span>
+                                       <span class="px-5 custon-span-font"><img src="img/svg9.svg" class="px-2 ">City View</span>
+                                    </div>
+                                    <span class="custon-span-font"><img src="img/svg10.svg" class="px-2 ">City View</span>
+                                    <span class="custon-span-font"><img src="img/sv8.svg" class="px-2">City View</span>
+                                 </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="refund-section1">
+                                     <div class="refund-left-section">
+                                       <p class="option m-0">Option 1</p>
+                                       <p class="option m-0 fully-refund">Fully Refundable</p>
+                                       <p class="option m-0">Before Wednesday 19 October 2022</p>
+                                       <p class="custon-span-font m-0"><img src="img/sv8.svg" class="px-2">Reserve now, pay later</p>
+                                       <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                       <p class="custon-span-font m-0"><img src="img/svg4.svg" class="px-2">Breakfast for 2 included</p>
+                                       <p class="custon-span-font m-0"><img src="img/svg5.svg" class="px-2">Breakfast for 2 included</p>
+                                     </div>
+                                     <div class="refund-right-section">
+                                       <p class="discount">15 % off</p>
+                                       <p class="custon-span-font m-0"><img src="img/sv8.svg" class="px-2"><span class="text-decoration-line-through"> AED 1,920</span> <span class="aed">AED 1,920</span></p>
+                                       <p class="custon-span-font m-0">for 5 nights</p>
+                                       <p class="custon-span-font m-0">€250 per night</p>
+                                       <p class="custon-span-font m-0">includes taxes & fees</p>
+                                       <p class="custon-span-font m-0">Price Details <i class="fa fa-right"></i></p>
+                                       <button class="btn btn-primary btn_hover">View Details</button>
+                                    </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="refund-section1">
+                                 <div class="refund-left-section">
+                                   <p class="option m-0">Option 1</p>
+                                   <p class="option m-0 fully-refund">Fully Refundable</p>
+                                   <p class="option m-0">Before Wednesday 19 October 2022</p>
+                                   <p class="custon-span-font m-0"><img src="img/sv8.svg" class="px-2">Reserve now, pay later</p>
+                                   <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                   <p class="custon-span-font m-0"><img src="img/svg4.svg" class="px-2">Breakfast for 2 included</p>
+                                   <p class="custon-span-font m-0"><img src="img/svg5.svg" class="px-2">Breakfast for 2 included</p>
+                                 </div>
+                                 <div class="refund-right-section">
+                                   <p class="discount">15 % off</p>
+                                   <p class="custon-span-font m-0"><img src="img/sv8.svg" class="px-2"><span class="text-decoration-line-through"> AED 1,920</span> <span class="aed">AED 1,920</span></p>
+                                   <p class="custon-span-font m-0">for 5 nights</p>
+                                   <p class="custon-span-font m-0">€250 per night</p>
+                                   <p class="custon-span-font m-0">includes taxes & fees</p>
+                                   <p class="custon-span-font m-0">Price Details <i class="fa fa-right"></i></p>
+                                   <button class="btn btn-primary btn_hover">View Details</button>
+                                </div>
+                              </div>
+                           </div>
+               
+                           <!----------------------------------------------------------------->
+                           <section class="container">
+                              <div class="py-5">
+                                    <h3 class="headings py-3">Facilities</h3>
+                                    <div class="row">
+                                       <div class="col-md-4">
+                                           <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                      </div>
+                                      <div class="col-md-4">
+                                       <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                     </div>
+                                    </div>
+                                    <div class="row py-3">
+                                       <div class="col-md-4">
+                                          <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                      </div>
+                                      <div class="col-md-4">
+                                         <p class="custon-span-font m-0"><img src="img/svg3.svg" class="px-2">Free WiFi</p>
+                                     </div>
+                                    </div>
+                               </div>
+                           </section>
+                          <hr>
+                           <!------------------------------------------------------------------------->
+                           <section class="container">
+                              <div class="py-5">
+                                    <h3 class="headings py-3">Hotel Services</h3>
+                                    <div class="row">
+                                       <div class="col-md-4">
+                                           <p class="custon-span-font m-0"><input type="checkbox" class="checkbox" checked><span class="px-2">Free WiFi</span></p>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <p class="custon-span-font m-0"><input type="checkbox" class="checkbox" checked><span class="px-2">Free WiFi</span></p>
+                                      </div>
+                                      <div class="col-md-4">
+                                       <p class="custon-span-font m-0"><input type="checkbox" class="checkbox" checked><span class="px-2">Free WiFi</span></p>
+                                     </div>
+                                    </div>
+                                    <div class="row pt-4">
+                                       <div class="col-md-4">
+                                          <p class="custon-span-font m-0"><input type="checkbox" class="checkbox" checked><span class="px-2">Free WiFi</span></p>
+                                      </div>
+                                      <div class="col-md-4">
+                                         <p class="custon-span-font m-0"><input type="checkbox" class="checkbox" checked><span class="px-2">Free WiFi</span></p>
+                                     </div>
+                                    </div>
+                               </div>
+                           </section>
+                           <hr>
+                           <!------------------------------------------------------------->
+                               <section class="container">
+                                  <div class="py-5">
+                                       <h3 class="headings py-3">Hotel Services</h3>
+                                      <img src="img/img9.jpg" class="img-fluid" alt="img">
+                                  </div>
+                              </section>
+                              <!------------------------------------------------------------->
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                </div>
+              </div>
+              <div class="col-md-3 pr-0">
+               <button class="btn btn-primary btn-from btn_hover">
+                  <span class="span-font1 text-white">From</span> 
+                  <span class="span-font">AED 1,920</span>
+                  <span  class="span-font1 text-white">Per Person</span>
+               </button>
+              </div>
+         </div>
+       </section>
+       <hr>
+       <!------------------------------------------------------------>
+       <section class="container footer-section">
+         <div class="row">
+                 <div class="col-md-3">
+                     <h3 class="footer-heading">Contact Us</h3>
+                        <div class="d-flex flex-column social-links">
+                               <a href="#">Customer Support</a>
+                               <a href="#">Service Guarantee</a>
+                               <a href="#">Website Feedback</a>
+                               <div class="socila-icon pt-2">
+                                  <a href="#"><img src="img/social-icon1.svg" class="img-fluid"></a>
+                                  <a href="#"><img src="img/social-icon2.svg" class="img-fluid"></a>
+                                  <a href="#"><img src="img/social-icon3.svg" class="img-fluid"></a>
+                                  <a href="#"><img src="img/social-icon4.svg" class="img-fluid"></a>
+                               </div>
+                        </div>
+                 </div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                 <div class="col-md-3">
+                   <h3 class="footer-heading">Contact Us</h3>
+                      <div class="d-flex flex-column social-links">
+                             <a href="#">About onestoptravel.com</a>
+                             <a href="#">News</a>
+                             <a href="#">Careers</a>
+                             <a href="#">Terms &amp; Conditions</a>
+                             <a href="#">Privacy Statement</a>
+                      </div>
+                 </div>
+               <div class="col-md-3">
+                <h3 class="footer-heading">Contact Us</h3>
+                   <div class="d-flex flex-column social-links">
+                          <a href="#">Visa Application</a>
+                          <a href="#">Flight Booking</a>
+                          <a href="#">Cab Services</a>
+                          <a href="#">Travel Insurance</a>
+                          <a href="#">Holiday Packages</a>
+                          <a href="#">Become a Tours &amp; Tickets Vendor</a>
+                   </div>
+                 </div>
+                 <div class="col-md-3">
+                   <h3 class=" payment">Payment Methods</h3>
+                      <div class="d-flex flex-column social-links">
+                         <div class="socila-icon pt-2">
+                                 <a href=""><img src="img/social-icon5.svg" class="img-fluid"></a>
+                                 <a href="#"><img src="img/social-icon6.svg" class="img-fluid"></a>
+                                 <a href="#"><img src="img/social-icon7.svg" class="img-fluid"></a>
+                                 <a href="#"><img src="img/social-icon8.svg" class="img-fluid"></a>
+                         </div>
+                         <h3 class=" payment pt-3">Our Partners</h3>
+                             <a href="#">
+                                   <img src="img/social-icon9.svg" class="img-fluid">
+                             </a>
+                      </div>
+                 </div>
+         </div>
+  </section>
+       </div>
+       
 </body>
 </html>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="js/jquery-3.4.1.js"></script>
+ <!--  bootstrap -->
+ <script src="js/bootstrap.min.js"></script>
+ <!---------custom Js----------->
+ <script src="js/custom.js"></script>
