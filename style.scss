@@ -1,0 +1,120 @@
+@mixin border-radius($border-radius-w){
+    -webkit-border-radius: $border-radius-w;
+    -moz-border-radius: $border-radius-w;
+    -ms-border-radius:$border-radius-w;
+    border-radius: $border-radius-w;
+}
+$bg-color:#F0F0F0;
+$color:#000000;
+.head-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.detail-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 0;
+}
+.about-hotel-info {
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0px 2px 8px rgb(0 82 180 / 28%);
+    @include border-radius(8px);
+    width: 100%;
+    height: 100%;
+}
+section.custom-width-modify {
+	flex: 0 0 100%;
+	max-width: 80%;
+	margin: 0 auto;
+    .modify {
+        background:$bg-color;
+        box-shadow: 0px 2px 8px rgb(0 82 180 / 28%);
+        @include border-radius(8px);
+        padding: 1.3rem;
+        margin: 1.5rem 0 3rem 0;
+
+        img.modify-img {
+            padding: 0 3.5rem;
+        }
+        p.head-text{
+            @extend .head-text;
+        }
+        p.detail-text{
+            @extend .detail-text;
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .modify {
+        flex-direction: column;
+         div{
+                width: 100%;
+                text-align: center;
+                p{
+                    margin: 0;
+                    margin-top: 1rem;
+                }
+            }
+         button{
+            margin-top: 1rem; 
+            }
+    }
+
+}
+// ----------------------------------Second Section--------------------------------------
+section.sort-by-section{
+    .bg-color{
+        background-color: $bg-color;
+            p.results{
+                padding: 1rem 0 0 1rem;
+                @extend .head-text;
+            }
+    }
+    .sort-drop-down {
+        display: flex;
+        justify-content: end;
+        
+        button{
+            background-color: $bg-color;
+            border: 0;
+            color: $color;
+        }
+    }
+}
+// ----------------------------------------------Price Section---------------------------------------
+.fa-1 {
+    font-size: 10px;
+    color: #625c5c;
+}
+.price-section{
+    p.head-text{
+        span{
+            &:first-child{
+               @extend .fa-1;
+            }
+            &:last-child{
+                @extend .head-text;
+            }
+        }
+    }
+    span.pl-2 {
+        padding-left: 10px;
+        @extend .head-text;
+    }
+}
+.hotel-info {
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0px 2px 8px rgb(0 82 180 / 28%);
+    @include border-radius(8px);
+}
+.hotel-left-sec {
+    border-right: 1px solid rgba(0,0,0,.125);
+}
+.border-left {
+    padding-left: 0.6rem;
+}
